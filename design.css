@@ -1,0 +1,102 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-color:aliceblue;
+}
+
+#page {
+    max-width: auto;
+    min-width: 720px;
+    margin: 10px auto 10 auto;
+    padding: 20px;
+    
+}
+
+hdbg {
+    top: 0px;
+    align: left;
+    width: 1300px;
+}
+
+navigation{
+    position:fixed;/*固定作用*/
+  top:0px;
+  /*ie6下样式，加下划线表示只针对ie6 的hack */
+  _position:absolute;/* 把导航栏位置定义为绝对位置  关键*/
+  _top:expression(documentElement.scrollTop + "px"); /* 把导航栏位置放在浏览器垂直滚动条的顶端  关键 */
+  z-index:9999; /* 让导航栏浮在网页的高层位置，遇到flash和图片时候也能始终保持最外层 */
+  text-align:left;
+}
+    
+
+header {
+    font-size: 80%;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.15em;
+    height: auto;
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+
+#content {
+    overflow: auto;
+}
+
+
+.col1, .col2, .col3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+    text-align: center;
+}
+
+
+#introduce, #skill, #experience, .article {
+    height: 10em;
+    margin-bottom: 1em;
+}
+
+ul {
+    width: auto;
+    padding: 15px;
+    margin: 0px auto 0px auto;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 0px 3px;
+    padding: 0.5em;
+}
+
+p{
+    width: auto;
+    margin: 20px auto 20px auto;
+    font-weight: normal;
+}
+
+a {
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px 5px 18px;
+}
+
+a.hover, a.on {
+    color: #cc3333;
+}
+
+footer {
+    text-align: center;
+    font-size: 5px;
+}
